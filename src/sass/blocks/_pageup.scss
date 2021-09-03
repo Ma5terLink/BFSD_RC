@@ -1,0 +1,14 @@
+.pageup {
+    display: none;
+    position: fixed;
+    bottom: 40px;
+    right: 40px;
+    width: 100px;
+    height: 100px;
+    svg path {
+        fill: var(--color-1);
+    }
+    img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,16 @@
+.policy {
+    margin: 50px;
+    text-align: justify;
+    color: var(--color-black);
+    box-shadow: 2px 2px 10px var(--color-1);
+    h1,h3 {
+        font-weight: 700;
+        text-align: center;
+    }
+    p {
+        padding: 0 30px;
+    }
+    span {
+        color: var(--color-1);
+    }
+}

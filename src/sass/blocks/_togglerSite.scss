@@ -1,0 +1,31 @@
+.site-toggler {
+    &__title {
+        display: block;
+        position: fixed;
+        right: 38px;
+        width: 148px;
+        top: 14px;
+        padding: 10px;
+        box-shadow: 5px 5px 10px;
+        border-radius: 10px;
+        cursor: pointer;
+        &.hide {
+            display: none;
+        }
+    }
+    &__item {
+        height: 60px;
+        position: fixed;
+        right: -140px;
+        top: 11px;
+        z-index: 0;
+        transition: all 1s;
+        img {
+            height: 100%;
+        }
+        &.active {
+            right: 0px;
+        }
+    }
+
+}

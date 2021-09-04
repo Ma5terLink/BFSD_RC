@@ -1,0 +1,6 @@
+.siteBF, .siteRC {
+    display: none;
+    &.active {
+        display: block;
+    }
+}

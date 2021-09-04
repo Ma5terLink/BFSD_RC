@@ -9,21 +9,258 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+<!-- Сайт благотворительного фонда     -->
+<section class="siteBF active">
+    <div class="site-toggler">
+        <div class="site-toggler__title">Для переключения между сайтами, наведите сюда</div>
+        <div class="site-toggler__item">
+            <img src="icons/logo-toggle-site-rBigSlide.png" alt="ToogleSite">
+        </div>
+    </div>
+
 <header class="header">
     <div class="container">
         <div class="header__wrapper">
-            <div class="header__logo"><img src="icons/logo.png" alt="Logo"></div>
-            <div class="header__title">Официальный сайт благотворительного фонда "Счастливые дети"</div>
+            <div class="header__logo">
+                <img src="icons/logo.png" alt="Logo">
+            </div>
+            <div class="header__title-wrapper">
+                <div class="header__title-wrapper-title">
+                    Официальный сайт благотворительного фонда "Счастливые дети"
+                </div>
+                <div class="header__title-wrapper-subtitle">
+                    453210, Россия, р.Башкортостан, г.Ишимбай, ул.Ишбулдина 141А<span><a href="tel:+79871383211">+7(987)138-32-11</a></span>
+                </div>
+            </div>
             <div class="header__btnHelp">
-                <a href="#upBtnHelp">Помощь</a></div>
+                <a href="#upBtnHelp">Помощь</a>
+            </div>
         </div>
         <div class="divider"></div>
     </div>
 </header>
 
-<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste possimus accusamus sit repellat odit dolor earum totam rerum saepe. Sunt optio tempore unde laudantium nobis! Nemo quibusdam iusto enim?</p>
 
-<p>ыфаыфа ыаыфаы ы аы ыа ыфафыаыф аыфаыа ыфафыаы аыа ы аыа ыа ыфа фыафыа</p>
+
+
+
+
+<section class="menu">
+    <div class="container">
+        <nav>
+                <div class="menu__item">
+                    <a href="#up">Проекты фонда</a>
+                    <div class="menu__item-subMenu">
+                        <div class="menu__item-link">
+                            <a style="color: var(--color-second); background-color:#fff" href="#upWeHere">Мы рядом</a>
+                        </div>
+                        <div class="menu__item-link">
+                            <a style="color: var(--color-second); background-color:#fff" href="#upCome">Праздник к вам приходит!</a>
+                        </div>
+                        <div class="menu__item-link">
+                            <a style="color: var(--color-second); background-color:#fff" href="#upHelp">Срочная помощь</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <a href="#up">Нужна помощь?!</a>
+                </div>
+                <div class="menu__item">
+                    <a href="#up">Им помогли</a>
+                </div>
+                <div class="menu__item">
+                    <a href="#up">Благодарности</a>
+                </div>
+                <div class="menu__item">
+                    <a href="#up">О Фонде</a>
+                    <div class="menu__item-subMenu">
+                        <div class="menu__item-link">
+                            <a style="color: var(--color-second); background-color:#fff" href="#upWeHere">Контакты и реквизиты</a>
+                        </div>
+                        <div class="menu__item-link">
+                            <a style="color: var(--color-second); background-color:#fff" href="#upWeHere">Команда фонда</a>
+                        </div>
+                        <div class="menu__item-link">
+                            <a style="color: var(--color-second); background-color:#fff" href="#upWeHere">Клиники</a>
+                        </div>
+                        <div class="menu__item-link">
+                            <a style="color: var(--color-second); background-color:#fff" href="#upWeHere">Документы</a>
+                        </div>
+                        <div class="menu__item-link">
+                            <a style="color: var(--color-second); background-color:#fff" href="#upWeHere">Политика в отношении персональных данных</a>
+                        </div>
+                        <div class="menu__item-link">
+                            <a style="color: var(--color-second); background-color:#fff" href="#upWeHere">Условия сервиса сбора пожертвований</a>
+                        </div>
+                        <div class="menu__item-link">
+                            <a style="color: var(--color-second); background-color:#fff" href="#upWeHere">Условия проведения платежей</a>
+                        </div>    
+                    </div>
+                </div>
+                <div class="menu__item">
+                    <a href="#up">Отчёты</a>
+                </div>
+        </nav>
+    </div>
+</section>
+
+
+
+
+
+<section class="sliderBF">
+    <div class="container">
+        <div id="wrapper">
+            <div id="container">
+                <div class="sliderbutton" id="slideleft" onclick="slideshow.move(-1)"></div>
+                <div id="slider">
+                    <ul>
+                        <li>
+                            <h3 class="title">
+                                <span>Матвеев Семён</span>, 8 лет<br>
+                                ДЦП</h3>
+                            <img src="img/BF_slider/slide-01.jpg" width="1170" height="400" alt="MatveevS" />
+                            <div class="text">
+                                <span>Место рождения:</span> г. Набережные челны<br>
+                                <span>Цель сбора:</span> Операция на спинном мозге СДР в клинике Children's StLouise США<br>
+                                <span>Срок сбора:</span> Экстренно<br>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="title">
+                                <span>Матиенко Паисий</span>, 4 года<br>
+                                ДЦП</h3>
+                            <img src="img/BF_slider/slide-02.jpg" width="1170" height="400" alt="MatienkoP" />
+                            <div class="text">
+                                <span>Место рождения:</span> г. Стерлитамак<br>
+                                <span>Цель сбора:</span> Реабилитация<br>
+                                <span>Срок сбора:</span> Экстренно<br>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="title">
+                                <span>Бойко Савелий</span>, 1 год<br>
+                                Спинальная мышечная атрофия 1 типа</h3>
+                            <img src="img/BF_slider/slide-03.jpg" width="1170" height="400" alt="BoikoS" />
+                            <div class="text">
+                                <span>Место рождения:</span> Ставропольский край, Новоселицкий район, с. Новоселицкое <br>
+                                <span>Цель сбора:</span> сбор на препарат Zolgensma<br>
+                                <span>Срок сбора:</span> Экстренно<br>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="title">
+                                <span>Васильева Юля</span>, 6 лет<br>
+                                Нейробластома забрюшинного пространства(РАК)</h3>
+                            <img src="img/BF_slider/slide-04.jpg" width="1170" height="400" alt="VasilevaU" />
+                            <div class="text">
+                                <span>Место рождения:</span> г.Краснодар<br>
+                                <span>Цель сбора:</span> На препарат иммунотерапии "Динутуксимаб бета" в онкоцентре им. Р.М. Горбачевой.<br>
+                                <span>Срок сбора:</span> Срочно<br>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="title">
+                                <span>Рыжков Дмитрий</span>, 8 лет<br>
+                                Врождённый порок сердца</h3>
+                            <img src="img/BF_slider/slide-05.jpg" width="1170" height="400" alt="RizhkovD" />
+                            <div class="text">
+                                <span>Место рождения:</span> Липецкая обл., п.Лев Толстой<br>
+                                <span>Цель сбора:</span> Операция в Boston Children's Hospital, США.<br>
+                                <span>Срок сбора:</span> Экстренно<br>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="title">
+                                <span>Титаренко Тимур</span>, 8 лет<br>
+                                ДЦП, Спастический тетрапарез</h3>
+                            <img src="img/BF_slider/slide-06.jpg" width="1170" height="400" alt="TitarenkoT" />
+                            <div class="text">
+                                <span>Место рождения:</span> г.Чебоксары<br>
+                                <span>Цель сбора:</span> Операция на спинном мозге СДР в клинике Children's St Louise США<br>
+                                <span>Срок сбора:</span> Экстренно<br>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="title">
+                                <span>Капаклы Максим</span>, 5 лет<br>
+                                Нейробластома 4 стадия (РАК)</h3>
+                            <img src="img/BF_slider/slide-07.jpg" width="1170" height="400" alt="KapakliM" />
+                            <div class="text">
+                                <span>Место рождения:</span> г.Тирасполь, Респ. Молдова <br>
+                                <span>Цель сбора:</span> Сбор на противорецидивное лечение в клинику " Медиполь", Турция<br>
+                                <span>Срок сбора:</span> Срочно<br>
+                            </div>
+                        </li>
+                        <li>
+                            <h3 class="title">
+                                <span>Родионова Арина</span>, 6 лет<br>
+                                Врождённый порок сердца</h3>
+                            <img src="img/BF_slider/slide-08.jpg" width="1170" height="400" alt="RodionovaA" />
+                            <div class="text">
+                                <span>Место рождения:</span> г.Владимир <br>
+                                <span>Цель сбора:</span> Две операции в США, в клинике St Louis Children’s hospital<br>
+                                <span>Срок сбора:</span> Экстренно<br>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                    <div class="sliderbutton" id="slideright" onclick="slideshow.move(1)"></div>
+                    <ul id="pagination" class="pagination">
+                        <li onclick="slideshow.pos(0)"></li>
+                        <li onclick="slideshow.pos(1)"></li>
+                        <li onclick="slideshow.pos(2)"></li>
+                        <li onclick="slideshow.pos(3)"></li>
+                        <li onclick="slideshow.pos(4)"></li>
+                        <li onclick="slideshow.pos(5)"></li>
+                        <li onclick="slideshow.pos(6)"></li>
+                        <li onclick="slideshow.pos(7)"></li>
+                    </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+</section>    
+
+
+
+
+<!-- Сайт реабилитационного центра -->
+<section class="siteRC ">
+    <div class="site-toggler">
+        <div class="site-toggler__title">Для переключения между сайтами, наведите сюда</div>
+        <div class="site-toggler__item">
+            <img src="icons/logo-toggle-site-rBigSlide.png" alt="ToogleSite">
+        </div>
+    </div>
+
+    <header class="header">
+        <div class="container">
+            
+            <div class="header__wrapper">
+                <div class="header__logo"><img src="icons/logo-rc.png" alt="Logo"></div>
+                <div class="header__title">Автономная некоммерческая организация РЦ "Подари завтра"</div>
+                <div class="header__btnHelp">
+                    <a href="#upBtnHelp">Помощь</a></div>
+            </div>
+            <div class="divider"></div>
+        </div>
+    </header>
+</section>  
+
+
 
 
 
@@ -35,6 +272,22 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- <script src="js/slick.min.js"></script> -->
+    <script src="js/tiny.js"></script>
+    <script>
+        var slideshow=new TINY.slider.slide('slideshow',{
+        id:'slider',
+        auto:5,
+        resume:false,
+        vertical:false,
+        navid:'pagination',
+        activeclass:'current',
+        position:0,
+        rewind:false,
+        elastic:false,
+        left:'slideleft',
+        right:'slideright'
+        });
+        </script>
     <script src="js/scripts.js"></script>
 
 </body>

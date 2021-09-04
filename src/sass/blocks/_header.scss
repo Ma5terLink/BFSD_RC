@@ -1,38 +1,60 @@
 .header {
     height: 90px;
     padding-top: 5px;
+    
     &__wrapper {
+        position: relative;
         display: grid;
         grid-template: 80px / 220px auto 150px;
+        background-color: var(--color-white);
+        z-index: 1;
     }
     &__logo {
         margin-left: 20px;
         height: 80px;
         width: 200px;
         img {
-            width: 100%;
+            height: 100%;
         }
     }
-    &__title {
-        display: block;
-        font-size: 25px;
-        font-weight: 700;
-        color: var(--color-main);
-        align-self: center;
-        text-align: center;
-        
+    &__title-wrapper {
+        &-title {
+            display: block;
+            font-size: 25px;
+            font-weight: 700;
+            color: var(--color-main);
+            align-self: center;
+            text-align: center;
+            padding-top: 10px;
+        }
+        &-subtitle {
+            text-align: center;
+            font-size: 15px;
+            span {
+                a {
+                    padding: 0;
+                    margin-left: 50px;
+                    font-size: 18px;
+                    
+                    color: var(--color-black);
+                    
+                }
+            }
+        }
     }
+
     &__btnHelp {
         font-size: 20px;
-        background-color: var(--color-second);
         align-self: center;
         text-align: center;
-        border: 1px solid var(--color-second);
-        border-radius: 50px;
         width: 130px;
         a {
             display: block;
             padding: 5px 5px;
+            color: var(--color-white);
+            background-color: var(--color-second);
+            border: 1px solid var(--color-second);
+            border-radius: 50px;
         }
         &:hover {
             text-shadow: 2px 2px 4px var(--color-white);

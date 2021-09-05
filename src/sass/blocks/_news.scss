@@ -1,0 +1,126 @@
+.news {
+    .container {
+        display: flex;
+        max-width: 1170px;
+        min-height: 500px;
+        padding-top: 40px;
+    }
+    &__title {
+        // font-size: 20px;
+        color: var(--color-main);
+        text-align: center;
+        padding-bottom: 40px;
+    }
+    &__mainWrapper {
+        // display: flex;
+        width: 827px;
+    }
+    &__helpCard {
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        margin-bottom: 10px;
+        border: 2px solid var(--color-second);
+        &-wrapper {
+            display: flex;
+        }
+        &-image {
+            width: 150px;
+            height: 150px;
+            margin-bottom: 20px;
+        }
+        &-info {
+            padding: 0 0 0 20px;
+            line-height: 22px;
+            span {
+                font-weight: 700;
+                color: var(--color-second);
+            };
+        }
+        &-donateCounter {
+            width: 100%;
+            height: 10px;
+            border-radius: 5px;
+            background-color: #D3D3D3;
+            span {
+                display: block;
+                // width: 3%;
+                height: 10px;
+                border-radius: 5px;
+                background-color: var(--color-second);
+            }
+        }
+        &-donateText {
+            margin: 10px 0 0 0;
+            font-size: 14px;
+        }
+        &-btn {
+            display: block;
+            margin-left: 633px;
+            a {
+                display: block;
+                padding: 10px 20px;
+                width: 150px;
+                color: var(--color-white);
+                background-color: var(--color-second);
+                text-align: center;
+                text-transform: uppercase;
+                &:hover {
+                    text-shadow: 2px 2px 4px var(--color-white);
+                    box-shadow: 4px 4px 10px var(--color-second);
+                }
+            }
+        }
+    }
+    &__btnAllKids {
+        display: block;
+        margin: 0 25%;
+        margin-top: 15px;
+        a{
+            display: block;
+            padding: 5px 10px;
+            font-size: 18px;
+            text-align: center;
+            border: 2px solid var(--color-main);
+            background-color: var(--color-white);
+            color: var(--color-main);
+        }
+    }
+    &__wrapper {
+        // display: flex;
+        width: 343px;
+    }
+    &__newsCard {
+        margin-left: 20px;
+        border: 1px solid #d3d3d3;
+        padding: 10px 20px;
+        margin-bottom: 5px;
+        a {
+            color: var(--color-main);
+        }
+        &-title {
+            text-align: center;
+            // color: var(--color-main);
+            text-transform: uppercase;
+            margin-bottom: 5px;
+            span {
+                color: var(--color-second);
+            }
+        }
+        img {
+            width: 280px;
+            height: 280px;
+        }
+        &-descr {
+            margin-top: 5px;
+            line-height: 22px;
+            // color: var(--color-main);
+
+        }
+        &-date {
+            font-size: 10px;
+            // color: var(--color-main);
+            text-align: right;
+        }
+    }
+}

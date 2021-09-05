@@ -56,8 +56,30 @@ menuBF.forEach(item => {
         item.lastElementChild.classList.toggle('active');
     });
 });
+// Счетчики собранных средсв, в карточках
+const counter1 = document.querySelectorAll('.news__helpCard-donateText-val1'),
+      counter2 = document.querySelectorAll('.news__helpCard-donateText-val2'),
+      lines = document.querySelectorAll('.news__helpCard-donateCounter span');
 
+lines.forEach((item, i) => {
+let aa, bb, num, num2;
+    aa = counter1[i].innerHTML;
+    bb = counter2[i].innerHTML;
+    num = num2 = '';
 
+    for (let j = 0; j < aa.length; j++) {
+        if (aa[j] != ' ') {
+            num += aa[j];
+        } else { continue; }
+    }
+    for (let j = 0; j < bb.length; j++) {
+        if (bb[j] != ' ') {
+            num2 += bb[j];
+        } else { continue; }
+    }
+    console.log(+num/(+num2/100));
+    lines[i].style.width = `${(+num/(+num2/100))}%`;
+});
 
 
 

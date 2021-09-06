@@ -1,0 +1,75 @@
+.yoursHelp {
+    .container {
+        padding: 10px 0 50px 0;
+        min-height: 648px;
+    }
+    &__title {
+        margin-bottom: 30px;
+        font-size: 28px;
+        font-weight: 700;
+        text-align: center;
+        color:  var(--color-main);
+    }
+    &__btn {
+        display: block;
+        cursor: pointer;
+        &.prev {
+            position: absolute;
+            left: -65px;
+            top: 310px;
+            &:hover {
+                svg path {
+                    fill: red;
+                }
+            }
+        }
+        &.next {
+            position: absolute;
+            right:  -65px;
+            top: 310px;
+            &:hover {
+                svg path {
+                    fill: red;
+                }
+            }
+        }
+        img {
+            width: 50px;
+            height: 50px;
+        }
+    } 
+    &__contents {
+        display: none;
+        position: absolute;
+        width: 100%;
+        justify-content: space-between;
+        transition: all 0.5s;
+        &.active {
+            display: flex;
+        }
+    }
+    &__card {
+        width: 370px;
+        box-shadow: 0 0 15px #888;
+        img {
+            width: 370px;
+            height: 370px;
+            object-fit:  cover;
+        }
+        &-title {
+            font-size: 24px;
+            font-weight: 700;
+            text-align: center;
+            color: var(--color-main);
+        }
+        &-descr {
+            padding: 0px 10px 10px 10px;
+            font-size: 16px;
+            line-height: 20px;
+            color: var(--color-main);
+            span {
+                color: var(--color-second);
+            }
+        }
+    }
+}

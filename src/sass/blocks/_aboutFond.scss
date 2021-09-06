@@ -1,0 +1,35 @@
+.aboutFond {
+    .container {
+      margin: 50px auto;
+      background-color: var(--color-white);
+      box-shadow: 0 0 15px #888;
+    }
+    &__title {
+      padding: 20px 0;
+      font-weight: 700;
+      text-align: center;
+      color: var(--color-second);
+    }
+    &__wrapper {
+      display: flex;
+      justify-content: space-between;
+    }
+    &__card {
+      padding: 20px;
+      width: 350px;
+      img {
+        display: block;
+        margin: 0 auto;
+        width: 200px;
+        height: 200px;
+      }
+      &-descr {
+        font-size: 18px;
+        font-weight: 700;
+        padding-top: 10px;
+        color: var(--color-main);
+        text-align: center;
+      }
+    }
+
+}

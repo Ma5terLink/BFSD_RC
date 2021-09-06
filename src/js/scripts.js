@@ -56,6 +56,7 @@ menuBF.forEach(item => {
         item.lastElementChild.classList.toggle('active');
     });
 });
+
 // Счетчики собранных средсв, в карточках
 const counter1 = document.querySelectorAll('.news__helpCard-donateText-val1'),
       counter2 = document.querySelectorAll('.news__helpCard-donateText-val2'),
@@ -77,10 +78,46 @@ let aa, bb, num, num2;
             num2 += bb[j];
         } else { continue; }
     }
-    console.log(+num/(+num2/100));
+    // console.log(+num/(+num2/100));
     lines[i].style.width = `${(+num/(+num2/100))}%`;
 });
 
-
-
+// Переключаем блоки в секции ВЫ ПОМОГЛИ
+const yHelpBtnPrev = document.querySelector('.yoursHelp__btn.prev'),
+            yHelpBtnNext = document.querySelector('.yoursHelp__btn.next'),
+            yHelpContent = document.querySelectorAll('.yoursHelp__contents');
+   
+yHelpBtnPrev.addEventListener('click', () => {
+    yHelpContent.forEach((item, i) => {
+        if (item.classList.contains('active') && i == 0) {
+            console.log('левый предел');
+        } else if (item.classList.contains('active') && i > 0) {
+            yHelpContent[i-1].classList.add ('active');
+            item.classList.remove('active');
+        }
+    });
 });
+yHelpBtnNext.addEventListener('click', () => {
+let j = yHelpContent.length-1;
+for (let i of yHelpContent){
+    if (yHelpContent[j].classList.contains('active') && j < yHelpContent.length-1) {
+        yHelpContent[j+1].classList.add ('active');
+        yHelpContent[j].classList.remove('active');
+        continue;    
+    } else if (yHelpContent[j].classList.contains('active') && j == yHelpContent.length-1) {
+        console.log('правый предел');
+    }
+    j--;
+}
+});
+
+
+
+
+
+
+
+
+
+
+}); //DOMContentLoaded
